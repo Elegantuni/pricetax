@@ -20,7 +20,7 @@ thebeginning:
 	cout << "Enter 5 to calculate price and tax price added from tax and the final price" << endl;
 	cout << "Enter 6 to calculate price added and final price from price and tax" << endl;
 	cout << "Enter 7 to calculate price and tax percentage from price added and the final price" << endl;
-	cout << "Enter 8 to calculate price add and tax from the price and final price" << endl;
+	cout << "Enter 8 to calculate price added and tax from the price and final price" << endl;
 	
 	cin >> the_input;
 	
