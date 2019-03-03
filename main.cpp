@@ -116,10 +116,17 @@ thebeginning:
 
 			price = roundToTenths(price);
 			
-			dollars_off = the_new_price - price;
+			dollars_off = price * tax/100;
 
 			dollars_off = roundToTenths(dollars_off);
-			
+
+			while(price + dollars_off > the_new_price)
+			{
+				price -= 0.01;
+				dollars_off = price * tax/100;
+				dollars_off = roundToTenths(dollars_off);
+			}
+
 			cout << "The price added is " << dollars_off << endl;
 			cout << "The price is " << price << endl;
 
